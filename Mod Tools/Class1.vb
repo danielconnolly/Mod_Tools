@@ -26,27 +26,26 @@ Public Class Class1
 
         If Gf.GCBNumMarkedTraces <> 0 Then
             MsgBox("Unselect all traces!!!")
-            Stop
         Else
             Select Case Gf.GCBNumMarkedPartsAndPads
                 Case 0
                     MsgBox("Please select at least one aperture")
-                'Stop
                 Case 1
                     Get_Apr_Info(False)
                     Dim f As New Reductions
                     f.ShowDialog()
+                    Gf.Unmark()
+
                 Case 2
                     'Get_Apr_Info(False)
                     Dim f As New Chip_Component_Mods
                     f.ShowDialog()
+                    Gf.Unmark()
                 Case Else
                     MsgBox("Too many pads selected")
-                    'Stop
             End Select
         End If
-        Gf.Unmark()
-
+        Gf.RedisplayAllDataWindows()
 
     End Sub
 End Class

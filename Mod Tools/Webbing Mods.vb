@@ -71,5 +71,7 @@ Public Class Webbing_Mods
         Me.Close()
     End Sub
 
+    Private Sub Webbing_Mods_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class

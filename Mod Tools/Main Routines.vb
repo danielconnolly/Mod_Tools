@@ -35,7 +35,7 @@ Module Main_Routines
 
         If Not Str(Val(Apr.Type)) < 6 Then
             MsgBox("Error: Cannot web this shape")
-            Stop
+            Exit Sub
         End If
 
         Web_X = Dim_x \ 4.5
@@ -61,11 +61,11 @@ Module Main_Routines
 
 
         If (Val(NewX) / OldX) > 1.5 Or (Val(NewY) / OldY) > 1.5 Then
-            If MsgBox("Are you sure you want to increase the size this much? " & Str(OldX) & " x " & Str(OldY) & " --> " & NewX & " x " & NewY, MsgBoxStyle.OkCancel, "Are you mad!") = MsgBoxResult.Cancel Then Stop
+            If MsgBox("Are you sure you want to increase the size this much? " & Str(OldX) & " x " & Str(OldY) & " --> " & NewX & " x " & NewY, MsgBoxStyle.OkCancel, "Are you mad!") = MsgBoxResult.Cancel Then Exit Sub
         End If
 
         If (Val(NewX) / OldX) < 0.5 Or (Val(NewY) / OldY) < 0.5 Then
-            If MsgBox("Are you sure you want to reduce the size this much? " & Str(OldX) & " x " & Str(OldY) & " --> " & NewX & " x " & NewY, MsgBoxStyle.OkCancel, "Are you mad!") = MsgBoxResult.Cancel Then Stop
+            If MsgBox("Are you sure you want to reduce the size this much? " & Str(OldX) & " x " & Str(OldY) & " --> " & NewX & " x " & NewY, MsgBoxStyle.OkCancel, "Are you mad!") = MsgBoxResult.Cancel Then Exit Sub
         End If
 
         Select Case NewShape
@@ -86,7 +86,7 @@ Module Main_Routines
                 Apr.IsVisible = LeaveVisible
             Case Else
                 MsgBox("Error: Unknown shape!")
-                Stop
+                Exit Sub
         End Select
     End Sub
 
@@ -102,11 +102,11 @@ Module Main_Routines
         NewY = Math.Round(OldY * (PercentY / 100), 3)
 
         If PercentX > 150 Or PercentY > 150 Then
-            If MsgBox("Are you sure you want to increase the size this much? " & Str(PercentX) & "% in x & " & Str(PercentY) & "% in y", MsgBoxStyle.OkCancel, "Are you mad!") = MsgBoxResult.Cancel Then Stop
+            If MsgBox("Are you sure you want to increase the size this much? " & Str(PercentX) & "% in x & " & Str(PercentY) & "% in y", MsgBoxStyle.OkCancel, "Are you mad!") = MsgBoxResult.Cancel Then Exit Sub
         End If
 
         If PercentX < 60 Or PercentY < 60 Then
-            If MsgBox("Are you sure you want to reduce the size this much? " & Str(PercentX) & "% in x & " & Str(PercentY) & "% in y", MsgBoxStyle.OkCancel, "Are you mad!") = MsgBoxResult.Cancel Then Stop
+            If MsgBox("Are you sure you want to reduce the size this much? " & Str(PercentX) & "% in x & " & Str(PercentY) & "% in y", MsgBoxStyle.OkCancel, "Are you mad!") = MsgBoxResult.Cancel Then Exit Sub
         End If
 
         Select Case NewShape
@@ -127,7 +127,7 @@ Module Main_Routines
                 Apr.IsVisible = LeaveVisible
             Case Else
                 MsgBox("Error: Unknown shape!")
-                Stop
+                Exit Sub
         End Select
 
     End Sub
@@ -162,7 +162,7 @@ Module Main_Routines
                 Units = "thou"
             Case Else
                 MsgBox("Error: Unknown units in aperture list!" & Chr(13) & "Cannot continue!")
-                Stop
+                Environment.Exit(1)
         End Select
 
         Apr = Alist_a.Item(PadNum)
@@ -183,10 +183,10 @@ Module Main_Routines
             Case GCB_APER_TYPE.OBLONG
                 Shape = "Oblong"
             Case GCB_APER_TYPE.CUSTOM
-                If MsgBox("Warning: Custom apertures will be treated as rectangles - custom shape will be lost!" & Chr(13) & "Continue with Reductions?", MsgBoxStyle.OkCancel) = MsgBoxResult.Cancel Then Stop
+                If MsgBox("Warning: Custom apertures will be treated as rectangles - custom shape will be lost!" & Chr(13) & "Continue with Reductions?", MsgBoxStyle.OkCancel) = MsgBoxResult.Cancel Then Environment.Exit(1)
                 Shape = "Rectangle"
             Case Else
-                If MsgBox("Warning: Unsupported Aperture Type - Shape will be treated as rectangle" & Chr(13) & "Continue with Reductions?", MsgBoxStyle.OkCancel) = MsgBoxResult.Cancel Then Stop
+                If MsgBox("Warning: Unsupported Aperture Type - Shape will be treated as rectangle" & Chr(13) & "Continue with Reductions?", MsgBoxStyle.OkCancel) = MsgBoxResult.Cancel Then Environment.Exit(1)
                 Shape = "Rectangle"
         End Select
 
