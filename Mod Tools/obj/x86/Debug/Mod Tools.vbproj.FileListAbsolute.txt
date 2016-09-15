@@ -1,0 +1,15 @@
+C:\Program Files (x86)\GraphiCode\PowerPlatform 16.2.6\GC-CAM Edit\Extensions\Mod Tools.dll
+C:\Program Files (x86)\GraphiCode\PowerPlatform 16.2.6\GC-CAM Edit\Extensions\Mod Tools.pdb
+C:\Program Files (x86)\GraphiCode\PowerPlatform 16.2.6\GC-CAM Edit\Extensions\Mod Tools.xml
+H:\My Documents\Visual Studio 2015\Projects\New Powerstation Script\Mod Tools\Mod Tools\obj\x86\Debug\Mod Tools.vbprojResolveAssemblyReference.cache
+H:\My Documents\Visual Studio 2015\Projects\New Powerstation Script\Mod Tools\Mod Tools\obj\x86\Debug\Mod_Tool.Chip_Component_Mods.resources
+H:\My Documents\Visual Studio 2015\Projects\New Powerstation Script\Mod Tools\Mod Tools\obj\x86\Debug\Mod_Tool.Resources.resources
+H:\My Documents\Visual Studio 2015\Projects\New Powerstation Script\Mod Tools\Mod Tools\obj\x86\Debug\Mod_Tool.Reductions.resources
+H:\My Documents\Visual Studio 2015\Projects\New Powerstation Script\Mod Tools\Mod Tools\obj\x86\Debug\Mod_Tool.Webbing_Mods.resources
+H:\My Documents\Visual Studio 2015\Projects\New Powerstation Script\Mod Tools\Mod Tools\obj\x86\Debug\Mod Tools.vbproj.GenerateResource.Cache
+H:\My Documents\Visual Studio 2015\Projects\New Powerstation Script\Mod Tools\Mod Tools\obj\x86\Debug\Mod Tools.dll
+H:\My Documents\Visual Studio 2015\Projects\New Powerstation Script\Mod Tools\Mod Tools\obj\x86\Debug\Mod Tools.xml
+H:\My Documents\Visual Studio 2015\Projects\New Powerstation Script\Mod Tools\Mod Tools\obj\x86\Debug\Mod Tools.pdb
+C:\Program Files (x86)\GraphiCode\PowerPlatform 16.3.6\GC-CAM Edit\Extensions\Mod Tools.dll
+C:\Program Files (x86)\GraphiCode\PowerPlatform 16.3.6\GC-CAM Edit\Extensions\Mod Tools.pdb
+C:\Program Files (x86)\GraphiCode\PowerPlatform 16.3.6\GC-CAM Edit\Extensions\Mod Tools.xml

@@ -1,0 +1,7 @@
+﻿Version History
+
+Mod Tools V1:
+	-	Conversion of Query2.gcb
+	-	Reduces single pads <4mm
+	-	Webs pads >4mm
+	-	Wendy house\Arrowheads double pads
